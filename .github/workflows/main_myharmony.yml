@@ -19,12 +19,13 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '14.x'
 
     - name: npm install, build, and test
       run: |
         npm install
-        npm run build
+        npm run build --if-present
+        npm run test --if-present
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
@@ -51,5 +52,5 @@ jobs:
       with:
         app-name: 'myharmony'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ac573472fd804e2da633e149f080c57f }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4bd23e48a8ea4019ad8cbc187b338fc5 }}
         package: .
