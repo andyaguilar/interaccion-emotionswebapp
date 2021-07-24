@@ -39,7 +39,7 @@
               <!-- here you can add your content for tab-content -->
               <template slot="tab-pane-1">
                 <div class="md-layout">
-                  <div class="md-layout-item md-size-25 mx-auto">
+                  <div class="md-layout-item md-size-100 mx-auto">
                     <h3>Sal a correr:</h3>
                     <h4>
                      Aunque no lo parezca, eliminar energía ayuda bastante a quitar las emociones fuertes, correr es una buena fuente de eliminación de energía.
